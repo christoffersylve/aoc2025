@@ -5,15 +5,15 @@ Welcome to my Advent of Code 2025 repository! Each day in December, I’ll add a
 ## ✨ What’s Inside
 
 * Daily solutions
-* Clear and readable code
+* !(Clear and readable code) 
 * A light sprinkle of holiday cheer
 
 ## 📁 Structure
 
 ```
-2025/
-  Day01/
-  Day02/
+aoc2025/
+  day_01/
+  day_02/
   ...
 ```
 
