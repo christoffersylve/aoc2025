@@ -19,4 +19,14 @@ aoc2025/
   ...
 ```
 
+## 💿 Run the code 
+
+```
+aoc2025/
+  day_01/
+    input.txt <- Add your input here
+    solution.ipynb
+  day_02/
+```
+
 Happy coding, and enjoy the countdown to Christmas! 🎅
