@@ -1,6 +1,8 @@
-# 🎄 Advent of Code 2025
+# 🎄 Advent of Code 2025 🎅
 
-Welcome to my Advent of Code 2025 repository! Each day in December, I’ll add a new puzzle solution—simple, clean, and written with a small touch of Christmas spirit.
+Welcome to my Advent of Code 2025 repository!  
+Between exams and projects, I’ll be adding new puzzle solutions whenever I find the time.  
+My goal is to keep them simple, clean, and sprinkled with a touch of Christmas spirit. ✨
 
 ## ✨ What’s Inside
 
