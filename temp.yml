@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+  title: BinPaste API
+  version: 1.0.0
+  description: API to save and read text-snippets with TTL
+
+servers:
+  - url: http://localhost:5000
+
+paths:
+  /snippets:
+    post:
+      summary: Save a new snippet
+      description: Store a snippet with a given TTL (in seconds)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+                  example: "Hello Snippet!"
+                ttl:
+                  type: integer
+                  description: Time to live in seconds
+                  example: 3600 # One hour expiration time for the created snippet before deletion.
+      responses:
+        "201":
+          description: Snippet created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "a3f9b1c2" # 8 hex char id for snippet
+
+  /snippets/{id}:
+    get:
+      summary: Get a snippet by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Snippet found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  text:
+                    type: string
+                    example: "Hello Snippet"
+        "404":
+          description: Snippet not found or expired
